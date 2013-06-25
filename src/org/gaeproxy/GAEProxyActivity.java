@@ -314,7 +314,7 @@ public class GAEProxyActivity extends PreferenceActivity
         .setIcon(android.R.drawable.ic_menu_delete);
     menu.add(Menu.NONE, Menu.FIRST + 2, 2, getString(R.string.about))
         .setIcon(android.R.drawable.ic_menu_info_details);
-    // return true鎵嶄細璧蜂綔鐢�
+    // return true才会起作用
     return true;
   }
 
@@ -339,7 +339,7 @@ public class GAEProxyActivity extends PreferenceActivity
 
   @Override
   public boolean onKeyDown(int keyCode, KeyEvent event) {
-    if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) { // 鎸変笅鐨勫鏋滄槸BACK锛屽悓鏃舵病鏈夐噸澶�
+    if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) { // 按下的如果是BACK，同时没有重复
       try {
         finish();
       } catch (Exception ignore) {
