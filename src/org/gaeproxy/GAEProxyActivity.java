@@ -73,9 +73,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-import com.google.ads.AdRequest;
-import com.google.ads.AdSize;
-import com.google.ads.AdView;
 import com.google.analytics.tracking.android.EasyTracker;
 import com.j256.ormlite.android.apptools.OpenHelperManager;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
@@ -129,7 +126,6 @@ public class GAEProxyActivity extends PreferenceActivity
   private Preference proxiedApps;
   private CheckBoxPreference isBypassAppsCheck;
   private Preference browser;
-  private AdView adView;
 
   private void copyAssets(String path) {
 
@@ -248,18 +244,6 @@ public class GAEProxyActivity extends PreferenceActivity
     setContentView(R.layout.main);
     addPreferencesFromResource(R.xml.gae_proxy_preference);
 
-    // Create the adView
-    adView = new AdView(GAEProxyActivity.this, AdSize.SMART_BANNER, "a14d8be8a284afc");
-    // Lookup your LinearLayout assuming it’s been given
-    // the attribute android:id="@+id/mainLayout"
-    FrameLayout layout = (FrameLayout) findViewById(R.id.ad);
-    // Add the adView to it
-    layout.addView(adView);
-    // Initiate a generic request to load it with an ad
-    AdRequest aq = new AdRequest();
-    // aq.setTesting(true);
-    adView.loadAd(aq);
-
     proxyText = (EditTextPreference) findPreference("proxy");
     portText = (EditTextPreference) findPreference("port");
     sitekeyText = (EditTextPreference) findPreference("sitekey");
@@ -330,7 +314,7 @@ public class GAEProxyActivity extends PreferenceActivity
         .setIcon(android.R.drawable.ic_menu_delete);
     menu.add(Menu.NONE, Menu.FIRST + 2, 2, getString(R.string.about))
         .setIcon(android.R.drawable.ic_menu_info_details);
-    // return true才会起作用
+    // return true鎵嶄細璧蜂綔鐢�
     return true;
   }
 
@@ -348,8 +332,6 @@ public class GAEProxyActivity extends PreferenceActivity
       sProgressDialog = null;
     }
 
-    adView.destroy();
-
     Crouton.cancelAllCroutons();
 
     super.onDestroy();
@@ -357,7 +339,7 @@ public class GAEProxyActivity extends PreferenceActivity
 
   @Override
   public boolean onKeyDown(int keyCode, KeyEvent event) {
-    if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) { // 按下的如果是BACK，同时没有重复
+    if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) { // 鎸変笅鐨勫鏋滄槸BACK锛屽悓鏃舵病鏈夐噸澶�
       try {
         finish();
       } catch (Exception ignore) {

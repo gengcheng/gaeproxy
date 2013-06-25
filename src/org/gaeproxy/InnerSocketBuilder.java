@@ -16,11 +16,11 @@ public class InnerSocketBuilder {
   private final String TAG = "CMWRAP->InnerSocketBuilder";
 
   /**
-   * 建立经由代理服务器至目标服务器的连接
+   * 寤虹珛缁忕敱浠ｇ悊鏈嶅姟鍣ㄨ嚦鐩爣鏈嶅姟鍣ㄧ殑杩炴帴
    *
-   * @param proxyHost 代理服务器地址
-   * @param proxyPort 代理服务器端口
-   * @param target 目标服务器
+   * @param proxyHost 浠ｇ悊鏈嶅姟鍣ㄥ湴鍧�
+   * @param proxyPort 浠ｇ悊鏈嶅姟鍣ㄧ鍙�
+   * @param target 鐩爣鏈嶅姟鍣�
    */
   public InnerSocketBuilder(String proxyHost, int proxyPort, String target) {
     this.proxyHost = proxyHost;
@@ -32,7 +32,7 @@ public class InnerSocketBuilder {
   private void connect() {
 
     // starTime = System.currentTimeMillis();
-    Log.v(TAG, "建立通道");
+    Log.v(TAG, "寤虹珛閫氶亾");
 
     try {
       innerSocket = new Socket(proxyHost, proxyPort);
@@ -40,7 +40,7 @@ public class InnerSocketBuilder {
       innerSocket.setSoTimeout(60 * 1000);
       isConnected = true;
     } catch (IOException e) {
-      Log.e(TAG, "建立隧道失败：" + e.getLocalizedMessage());
+      Log.e(TAG, "寤虹珛闅ч亾澶辫触锛�" + e.getLocalizedMessage());
     }
   }
 
