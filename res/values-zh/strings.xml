@@ -16,6 +16,7 @@
     <string name="ok_iknow">我知道了</string>
     <string name="proxy">代理地址</string>
     <string name="port">本地端口</string>
+    <string name="about_title">GAEProxy %s</string>
     <string name="sitekey">密钥</string>
     <string name="auto_connect">自动连接</string>
     <string name="auto_reconnect">自动恢复连接</string>
@@ -83,6 +84,60 @@
     <string name="system_proxy">系统代理</string>
     <string name="system_proxy_summary">设置系统代理，无需ROOT权限，仅工作在Android 4.0及以上系统，并仅对当前Wifi连接生效</string>
 
+       <string name="mirror_list">
+        ZmNhcGpwfHBzd3N3ZXxzdG9ybWZhdHdvd3xrZWRpZ3VvfGdmd2Rhb3xiZWFyYmVhcmhqMXxjYW9nb2FnZW50fHByb3h5NjY3fGFlbHhzYW18bWF4bWFydGFpbmdvYWdlbnR8bWV0YWxqb2tlcjEwMDJ8c2hlbmRhbnB1ZmYxfHJveHNreWZxfGZsb3VzZXByb3h5fHRhb2Vyc2h1fGhxeTUxMjI4fGxpaGFuZzkxMnxmcmVlNG0yZ298cGV0ZXJtYXBsZXxnb2FnZW50LWR1cDAwMXxvaWNxZGFuaWVsfGxpYW5neXk4ODg4fGNhdGFtZWk2fHN1bm55aGFuODIwfHBpYW9oYW44NHxibGluZGNoaW5hfHB1YmxpY2dvYWdlbnQxfHl1c2h1bnlhb3pob25nZ3VvfHN0ZWZ3b28tZnVjay1nZnd8Y29tcHV0ZXJ4YW18bGFvbGlhbm5hbmFwcDF8Y2ZhbnMxOTgyfHh1ZXJvbnx6cWhzZnp8c3dhZ21vbnxmb3JqYXBhbmZvbnxpMzMwNjIwMDk4OHx5dW1pbmc1MjAxMzR8YXpyYWVsZ3p8YmVlcmdvYWdlbnR8Y29taXRjbnxnb291dGJhYWF8d2hzaG1kc2ZzdGNzaDE2M3xocS1nb2FnZW50fGJic2NjYnN8Y2x5aHkxOTczfHZpcC0xMTE1fG15bmVjcXF8bXluZWN0dHx6MTY0OTgwMzE2fGNvZGluZ3RpbWVsZXNzfGNhaWh1aTA4MDE=
+    </string>
+    <string name="mirror_path">2</string>
+    <string name="mirror_sitekey"></string>
+    <string name="AboutActivity.VersionText">版本号:</string>
+    <string name="Main.MenuSelectText">选择文本</string>
+    <string name="Main.MenuMobileView">移动视图</string>
+    <string-array name="chn_list">
+        <item>0.0.0.0/7</item>
+        <item>10.0.0.0/8</item>
+        <item>14.0.0.0/8</item>
+        <item>27.0.0.0/8</item>
+        <item>36.0.0.0/8</item>
+        <item>39.0.0.0/8</item>
+        <item>42.0.0.0/7</item>
+        <item>49.0.0.0/8</item>
+        <item>58.0.0.0/7</item>
+        <item>60.0.0.0/7</item>
+        <item>101.0.0.0/8</item>
+        <item>103.0.0.0/8</item>
+        <item>106.0.0.0/8</item>
+        <item>110.0.0.0/7</item>
+        <item>112.0.0.0/4</item>
+        <item>134.128.0.0/9</item>
+        <item>139.0.0.0/9</item>
+        <item>139.128.0.0/9</item>
+        <item>140.0.0.0/9</item>
+        <item>140.128.0.0/9</item>
+        <item>144.0.0.0/9</item>
+        <item>144.128.0.0/9</item>
+        <item>150.0.0.0/8</item>
+        <item>153.0.0.0/8</item>
+        <item>157.0.0.0/9</item>
+        <item>157.128.0.0/9</item>
+        <item>159.128.0.0/9</item>
+        <item>161.128.0.0/9</item>
+        <item>162.0.0.0/9</item>
+        <item>163.0.0.0/8</item>
+        <item>166.0.0.0/9</item>
+        <item>167.128.0.0/9</item>
+        <item>168.128.0.0/9</item>
+        <item>171.0.0.0/8</item>
+        <item>172.0.0.0/12</item>
+        <item>175.0.0.0/8</item>
+        <item>180.0.0.0/8</item>
+        <item>182.0.0.0/7</item>
+        <item>192.112.0.0/12</item>
+        <item>192.128.0.0/9</item>
+        <item>202.0.0.0/7</item>
+        <item>210.0.0.0/7</item>
+        <item>218.0.0.0/7</item>
+        <item>220.0.0.0/6</item>
+    </string-array>
     <!--
          Zirco Browser for Android Copyright (C) 2010 - 2011 J. Devauchelle 
 		and contributors. This program is free software; you can redistribute it 
